@@ -5,9 +5,8 @@ from random import choice
 
 
 app = FastAPI()
-redis = Redis(port=6379, host='127.0.0.1')
+redis = Redis(port=6379, host='redis')
 gen_rand_symbols = ascii_letters + digits
-print(gen_rand_symbols)
 len_token = 10
 
 
